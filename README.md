@@ -1,7 +1,7 @@
 # Enterprise AI SOP
 
 **白泽明理 · Formal eXplainable AI**  
-Shanghai consultancy for enterprise AI adoption and process redesign.  
+Hangzhou consultancy for enterprise AI adoption and process redesign.  
 Website: [https://fxai.ai](https://fxai.ai) · Method: [https://fxai.ai/method/](https://fxai.ai/method/) · Services: [https://fxai.ai/services/](https://fxai.ai/services/)
 
 This repository is a public blueprint, not a product. It describes how we design organization-level AI work: diagnose first, then access, then engineering, then delivery, then compound. Execution stays with the client team.
