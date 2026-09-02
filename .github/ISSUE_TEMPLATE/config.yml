@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Method docs
+    url: https://fxai.ai/method/
+    about: Full consulting method (not a product demo or installer).
+  - name: Consultancy site
+    url: https://fxai.ai
+    about: Services ladder and diagnostic booking.
