@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Book a diagnostic
+    url: https://fxai.ai/contact/
+    about: Implementation help is a consulting conversation, not an issue.
+  - name: Method pages
+    url: https://fxai.ai/method/
+    about: Narrative and service path live on the site.
