@@ -1,0 +1,30 @@
+name: SOP edit
+description: Propose a clarification or fix to the public blueprint.
+title: "[SOP] "
+labels: ["sop"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options:
+        - clarification
+        - exit-test
+        - good first issue
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Proposed change
+      description: Quote the current sentence and the replacement. One section only.
+    validations:
+      required: true
+  - type: textarea
+    id: accept
+    attributes:
+      label: Acceptance
+      description: One line that a reviewer can check. Required if this is a good first issue.
+    validations:
+      required: true
