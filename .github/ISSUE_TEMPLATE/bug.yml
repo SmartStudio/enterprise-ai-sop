@@ -1,0 +1,48 @@
+name: Methodology bug
+description: An error, contradiction, or broken link in the public SOP.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This repository is a **public consulting SOP**, not a product.
+        Use this form for mistakes in the methodology text, tables, exit tests, or links.
+        Do not paste client names, live credentials, or identifying architecture.
+  - type: textarea
+    id: what
+    attributes:
+      label: What is wrong
+      description: Quote the section (or paste a small excerpt) and describe the error.
+      placeholder: The Access exit test says … but Diagnose produce … contradicts it because …
+    validations:
+      required: true
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Stage (if any)
+      options:
+        - Diagnose
+        - Access
+        - Engineer
+        - Deliver
+        - Compound
+        - First screen / Quick start
+        - Community files / workflows
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: README heading, commit, or https://fxai.ai/method/ URL.
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Boundary
+      options:
+        - label: This report does not invent a product, trading system, or agent-army kit.
+          required: true
+        - label: This report does not include client-identifying material or secrets.
+          required: true
