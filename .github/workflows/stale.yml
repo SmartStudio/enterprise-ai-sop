@@ -1,0 +1,25 @@
+name: Stale
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v9
+        with:
+          days-before-stale: 21
+          days-before-close: 7
+          stale-issue-label: stale
+          stale-pr-label: stale
+          stale-issue-message: This issue has been quiet for 21 days. Comment to keep it open, or it will close in 7 days.
+          stale-pr-message: This PR has been quiet for 21 days. Comment to keep it open, or it will close in 7 days.
+          close-issue-message: Closed as stale. Open a new issue if the SOP still needs the change.
+          exempt-issue-labels: "good first issue"
