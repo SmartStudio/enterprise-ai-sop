@@ -1,12 +1,35 @@
 # Enterprise AI SOP
 
-**白泽明理 · Formal eXplainable AI**  
-Hangzhou consultancy for enterprise AI adoption and process redesign.  
-Website: [https://fxai.ai](https://fxai.ai) · Method: [https://fxai.ai/method/](https://fxai.ai/method/) · Services: [https://fxai.ai/services/](https://fxai.ai/services/)
+**企业 AI 落地 SOP——先写清边界，再自动化。**  
+**Public SOP for enterprise AI: write the boundary before you automate.**
 
-This repository is a public blueprint, not a product. It describes how we design organization-level AI work: diagnose first, then access, then engineering, then delivery, then compound. Execution stays with the client team.
+A public blueprint from [白泽明理 / Formal eXplainable AI](https://fxai.ai) for organization-level AI work. Not a product. Not a trading kit. Not an “AI agent army.”
 
-Do not treat this as a forex, trading, or “AI agent army” kit. It is consulting methodology.
+**Who it is for.** Founders, CTOs, and ops leads whose teams already use Codex, Claude Code, Cursor, or ChatGPT, and need a signed boundary before they scale seats.
+
+**Why not the status quo.** Buying more seats is not a diagnosis. Scaling without a one-page list of what AI may do alone vs what a person must approve just multiplies unowned actions.
+
+| Start | Link |
+| --- | --- |
+| Method / demo | https://fxai.ai/method/ |
+| Site | https://fxai.ai |
+| Book a diagnostic | https://fxai.ai/contact/ |
+| Services | https://fxai.ai/services/ |
+
+## Quick start
+
+1. Copy the [one-page check](#one-page-check-use-in-a-45-minute-diagnostic) into a 45-minute meeting.
+2. Fill a two-column boundary table: autonomous vs human-approved.
+3. Do not buy more seats until Legal and a business owner can both sign that table.
+4. Walk **Diagnose → Access → Engineer → Deliver → Compound**. If an exit test fails, stay.
+
+This repository is a public blueprint. Execution stays with the client team.
+
+## Alive
+
+- **Commits:** the SOP text is maintained here; method pages update at [fxai.ai/method](https://fxai.ai/method/).
+- **Release:** none yet. Changelog will be drafted on the first tagged release.
+- **Roadmap:** keep the five-stage exit tests current; add worked examples that do not identify clients; first tagged `v0.1` after community files land.
 
 ---
 
@@ -15,8 +38,6 @@ Do not treat this as a forex, trading, or “AI agent army” kit. It is consult
 Write the boundary before you automate.
 
 If the team cannot list, on one page, which actions AI may take alone and which actions a person must approve, do not scale tools. Scaling without that list just multiplies unowned actions.
-
----
 
 ## Five stages
 
