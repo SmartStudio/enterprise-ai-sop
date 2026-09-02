@@ -1,0 +1,29 @@
+name: Star chart
+
+on:
+  schedule:
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+  watch:
+    types: [started]
+
+permissions:
+  contents: write
+
+jobs:
+  starchart:
+    if: github.event_name != 'watch' || github.event.repository.stargazers_count < 50 || github.event.repository.stargazers_count % 10 == 0
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: maolonglong/actions-starcharts@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          outfile: starchart.svg
+      - name: Commit chart
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add starchart.svg
+          git diff --staged --quiet || git commit -m "chore: update star chart"
+          git push
