@@ -1,0 +1,43 @@
+name-template: "v$RESOLVED_VERSION"
+tag-template: "v$RESOLVED_VERSION"
+categories:
+  - title: "Methodology"
+    labels:
+      - "methodology"
+      - "documentation"
+  - title: "Community"
+    labels:
+      - "community"
+      - "good first issue"
+  - title: "Bug fixes"
+    labels:
+      - "bug"
+      - "fix"
+  - title: "Maintenance"
+    labels:
+      - "chore"
+      - "dependencies"
+change-template: "- $TITLE (#$NUMBER) @$AUTHOR"
+change-title-escapes: '\<*_&'
+version-resolver:
+  major:
+    labels:
+      - "major"
+  minor:
+    labels:
+      - "minor"
+  patch:
+    labels:
+      - "patch"
+  default: patch
+template: |
+  ## What’s Changed
+
+  $CHANGES
+
+  ## Note
+
+  This repository is a public consulting SOP, not a product release.
+  Draft notes exist so methodology edits are traceable. No installer ships with a tag.
+
+  **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION

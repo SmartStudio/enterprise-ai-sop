@@ -1,12 +1,49 @@
 # Enterprise AI SOP
 
-**白泽明理 · Formal eXplainable AI**  
-Hangzhou consultancy for enterprise AI adoption and process redesign.  
-Website: [https://fxai.ai](https://fxai.ai) · Method: [https://fxai.ai/method/](https://fxai.ai/method/) · Services: [https://fxai.ai/services/](https://fxai.ai/services/)
+**企业 AI 落地 SOP——先写清边界，再自动化。**
 
-This repository is a public blueprint, not a product. It describes how we design organization-level AI work: diagnose first, then access, then engineering, then delivery, then compound. Execution stays with the client team.
+**Public SOP for enterprise AI: write the boundary before you automate.**
 
-Do not treat this as a forex, trading, or “AI agent army” kit. It is consulting methodology.
+[Docs](https://fxai.ai/method/) · [Install / Demo](https://fxai.ai) · [Website](https://fxai.ai)
+
+This repository is a **public consulting blueprint**, not a product and not the [fxai.ai](https://fxai.ai) website. It describes how 白泽明理 · Formal eXplainable AI (Hangzhou) designs organization-level AI work. **Client teams execute.** We do not ship software, staff an outsourcing bench, or operate your production system from this repo.
+
+Do not treat this as a forex, trading, or “AI agent army” kit.
+
+### What it is
+
+A five-stage SOP for enterprise AI: **Diagnose → Access → Engineer → Deliver → Compound**. Each stage has an exit test. If the test fails, stay. The rule above the five steps: write the boundary before you automate.
+
+### Who it is for
+
+CTOs, legal, and delivery leads who must put AI into real workflows (requirements, implementation, review, release) and who can sign a one-page list of actions the model may take alone versus actions a person must approve.
+
+### Why this is better than the status quo
+
+Most teams buy seats first, then discover nobody owns the boundary. Scaling Copilot / Claude / Codex without that list just multiplies unowned actions. This SOP inverts the order: diagnose and sign the autonomous-vs-human table, then put permission, routing, cost, and audit in one access layer, then enter the development loop, then deliver with stage evidence, then compound into reusable skills.
+
+### Where to click next
+
+| Link | What you get |
+| --- | --- |
+| **[Docs](https://fxai.ai/method/)** | Full method write-up |
+| **[Install / Demo](https://fxai.ai)** | Consultancy site and diagnostic booking (there is no product installer in this repo) |
+| **[Website](https://fxai.ai)** | Services ladder |
+| In this repo | [Quick start](#quick-start) · [Five stages](#five-stages) · [Contributing](CONTRIBUTING.md) |
+
+---
+
+## Quick start
+
+There is nothing to install from this repository. Use the SOP in one sitting.
+
+1. Copy the [one-page check](#one-page-check-use-in-a-45-minute-diagnostic). Fill it in a 45-minute meeting with a business owner and someone who can speak for legal.
+2. If the boundary table (autonomous vs human-approved) is unsigned, stop. Do not buy more seats.
+3. Walk the five stages in order. Each stage has an **exit test**. If it fails, stay. Do not skip Access to chase Delivery.
+4. Adapt the tables in this README inside your company. Execution stays with your team.
+5. Read the full method at [fxai.ai/method](https://fxai.ai/method/). Book a diagnostic via [fxai.ai](https://fxai.ai).
+
+That is the start path: a meeting, a signed boundary, then the next failing exit test.
 
 ---
 
@@ -157,11 +194,32 @@ Copy this. Fill it in a meeting. If a row is blank, that row is the next design 
 - Vendor account sharing instructions
 - “Best AI forex bot” copy, or any trading system
 - A promise that we will write or operate your production system
+- Fake product screenshots or demo GIFs (this is a methodology, not an app)
 
 For the full service ladder and a diagnostic booking path, use [https://fxai.ai](https://fxai.ai).
 
 ---
 
+## Roadmap
+
+There is no product roadmap and no versioned software release. This is a public SOP. Honest placeholders until a numbered edition exists:
+
+- [ ] **SOP edition tags** (for example `sop-0.1`) when the five stages or exit tests change in a breaking way. None exist yet.
+- [ ] **Translated one-pagers** (tables only) if volunteers land. The locked category lines stay bilingual as they are.
+- [x] **Community hygiene** (this conversion): first-screen README, contributing/conduct/security, issue and PR templates, stale bot, release drafter, weekly star chart.
+
+See [Releases](https://github.com/SmartStudio/enterprise-ai-sop/releases). Draft notes will appear after merges; no GitHub Release has been published yet.
+
+---
+
+## Star history
+
+![Star history](images/starcharts.svg)
+
+Generated weekly by GitHub Actions ([maolonglong/actions-starcharts](https://github.com/maolonglong/actions-starcharts)) and written back to `images/starcharts.svg`. The placeholder in that path is replaced after the first successful run on the default branch. This is a star-history chart, not a product usage graph.
+
+---
+
 ## License
 
-Documentation in this repository is provided as-is for reading and adaptation inside your company. Brand names 白泽明理 and Formal eXplainable AI remain with Baize Tech.
+See [LICENSE](LICENSE). Documentation in this repository is provided as-is for reading and adaptation inside your company. Brand names 白泽明理 and Formal eXplainable AI remain with Baize Tech.

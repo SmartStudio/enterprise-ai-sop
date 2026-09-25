@@ -1,0 +1,42 @@
+name: Good first issue
+description: Propose a small, self-contained docs fix. Maintainers apply the good first issue label when the scope is right.
+title: "[good first issue] "
+labels: ["good first issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Guidance.** A good first issue is a one-sitting Markdown change that does **not** alter an exit test or the five-stage order.
+
+        Typical first contributions (see also [CONTRIBUTING.md](../../CONTRIBUTING.md)):
+
+        - Typo or bilingual heading drift (Diagnose · 诊断, …)
+        - A dead URL
+        - One extra row on the one-page check, with a reason
+        - A clearer “Do not” sentence that keeps the same meaning
+
+        If the change would rewrite a stage, open a **Methodology bug** instead.
+  - type: textarea
+    id: task
+    attributes:
+      label: Suggested task
+      description: What should a first-time contributor change, and where?
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done looks like
+      description: How a reviewer will know the issue is finished.
+      placeholder: README heading X uses the same wording in EN and ZH; link Y returns 200.
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      options:
+        - label: This can be finished without designing a new product, demo, or workflow skip.
+          required: true
+        - label: This does not change Diagnose → Access → Engineer → Deliver → Compound.
+          required: true

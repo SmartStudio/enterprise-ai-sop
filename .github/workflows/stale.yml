@@ -1,0 +1,36 @@
+name: Close stale issues and PRs
+
+on:
+  schedule:
+    - cron: "30 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v10
+        with:
+          days-before-stale: 21
+          days-before-close: 7
+          stale-issue-label: stale
+          stale-pr-label: stale
+          exempt-issue-labels: "good first issue,keep-open,security"
+          exempt-pr-labels: "keep-open,security"
+          remove-stale-when-updated: true
+          stale-issue-message: >
+            This issue is stale because it has been silent for 21 days.
+            Comment or remove the stale label, or it will be closed in 7 days.
+          close-issue-message: >
+            Closing this issue after a further 7 days of silence.
+            Reopen it if the methodology question is still live.
+          stale-pr-message: >
+            This pull request is stale because it has been silent for 21 days.
+            Comment or remove the stale label, or it will be closed in 7 days.
+          close-pr-message: >
+            Closing this pull request after a further 7 days of silence.
+            Open a new PR (or reopen this one) if the change is still wanted.
