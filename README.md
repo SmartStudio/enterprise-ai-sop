@@ -6,7 +6,7 @@
 
 [Docs](https://fxai.ai/method/) · [Install / Demo](https://fxai.ai) · [Website](https://fxai.ai)
 
-This repository is a **public consulting blueprint**, not a product and not the [fxai.ai](https://fxai.ai) website. It describes how 白泽明理 · Formal eXplainable AI (Hangzhou) designs organization-level AI work. **Client teams execute.** We do not ship software, staff an outsourcing bench, or operate your production system from this repo.
+This repository is a **public consulting blueprint**, not a product and not the [fxai.ai](https://fxai.ai) website. It describes how 白泽明理 Baize AI (Hangzhou) designs organization-level AI work. For delivery (training, FDE on-site deployment, tool development), see https://fxai.ai/services/.
 
 Do not treat this as a forex, trading, or “AI agent army” kit.
 
@@ -222,4 +222,4 @@ Generated weekly by GitHub Actions ([maolonglong/actions-starcharts](https://git
 
 ## License
 
-See [LICENSE](LICENSE). Documentation in this repository is provided as-is for reading and adaptation inside your company. Brand names 白泽明理 and Formal eXplainable AI remain with Baize Tech.
+See [LICENSE](LICENSE). Documentation in this repository is provided as-is for reading and adaptation inside your company. Brand names 白泽明理 and Baize AI remain with Baize Tech.
