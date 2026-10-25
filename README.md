@@ -223,3 +223,14 @@ Generated weekly by GitHub Actions ([maolonglong/actions-starcharts](https://git
 ## License
 
 See [LICENSE](LICENSE). Documentation in this repository is provided as-is for reading and adaptation inside your company. Brand names 白泽明理 and Baize AI remain with Baize Tech.
+
+---
+
+## 延伸阅读
+
+Notes on fxai.ai (in Chinese) that go deeper on single stages of the SOP:
+
+- [AI 落地场景先挑哪类？先看结果能不能当场验证](https://fxai.ai/notes/ai-verifiable-work-first/): Diagnose. Pick work whose results can be checked right away.
+- [企业给 Agent 开工具权限，先开哪类、后开哪类](https://fxai.ai/notes/agent-tool-permission-ladder/): Access. Open tool permissions step by step, by the cost of each action.
+- [企业 AI 试点为什么先从一个部门开始](https://fxai.ai/notes/enterprise-ai-pilot-vs-accounts-for-all/): Engineer. Start with one department and one workflow that can be accepted or rejected.
+- [Agent 试点能跑通，扩到生产还缺哪几项？](https://fxai.ai/notes/agent-pilot-to-production-checklist/): Deliver. What a working pilot still lacks before it goes to production.
